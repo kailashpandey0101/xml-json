@@ -1,0 +1,19 @@
+{
+  "customerId" : 10,
+  "custName" : "Kailash",
+  "dateOfBirth" : 644994000000,
+  "annualSalary" : 75000.0,
+  "address" : {
+    "street" : "6445 Love Dr",
+    "city" : "Irving",
+    "state" : "TX",
+    "zip" : 75059
+  },
+  "paymentMethod" : [ {
+    "cardNumber" : "7487632437477",
+    "cardName" : "VISA",
+    "dateFrom" : 1452405600000,
+    "dateType" : "GregorianCalender",
+    "cardType" : "CREDITCARD"
+  } ]
+}

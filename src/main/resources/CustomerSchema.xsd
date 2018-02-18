@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.kailash.org/CustomerSchema" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.kailash.org/CustomerSchema">
+
+    <complexType name="Customer">
+    	<sequence>
+    		<element name="customerId" type="int"></element>
+    		<element name="custName" type="string"></element>
+    		<element name="dateOfBirth" type="date"></element>
+    		<element name="annualSalary" type="float"></element>
+    		<element name="address" type="tns:Address"></element>
+    		<element name="paymentMethod" type="tns:PaymentMethod" minOccurs="1" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="Address">
+    	<sequence>
+    		<element name="street" type="string"></element>
+    		<element name="city" type="string"></element>
+    		<element name="state" type="string"></element>
+    		<element name="zip" type="int"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="PaymentMethod">
+    	<sequence>
+    		<element name="cardNumber" type="string"></element>
+    		<element name="cardName" type="string"></element>
+    		<element name="dateFrom" type="date"></element>
+    		<element name="dateType" type="string"></element>
+    		<element name="cardType">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="DEBIT"></enumeration>
+    					<enumeration value="CREDIT"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+
+    <element name="Customer" type="tns:Customer"></element>
+</schema>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Customer xmlns:tns="http://www.kailash.org/CustomerSchema" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.kailash.org/CustomerSchema CustomerSchema.xsd ">
+  <tns:customerId>1</tns:customerId>
+  <tns:custName>tns:custName</tns:custName>
+  <tns:dateOfBirth>2001-01-01</tns:dateOfBirth>
+  <tns:annualSalary>0.0</tns:annualSalary>
+  <tns:address>
+    <tns:street>tns:street</tns:street>
+    <tns:city>tns:city</tns:city>
+    <tns:state>tns:state</tns:state>
+    <tns:zip>0</tns:zip>
+  </tns:address>
+  <tns:paymentMethod>
+    <tns:cardNumber>tns:cardNumber</tns:cardNumber>
+    <tns:cardName>tns:cardName</tns:cardName>
+    <tns:dateFrom>2001-01-01</tns:dateFrom>
+    <tns:dateType>tns:dateType</tns:dateType>
+    <tns:cardType>DEBIT</tns:cardType>
+  </tns:paymentMethod>
+</tns:Customer>

@@ -1,0 +1,5 @@
+trng\jaxb\PaymentMethod.class
+trng\jaxb\ObjectFactory.class
+trng\jaxb\Address.class
+trng\jaxb\Customer.class
+trng\jaxb\package-info.class
